@@ -1,24 +1,237 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 3: Vibe Coding y tu Primera Co-creación con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3: Vibe Coding y tu Primera Co-creación con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen de la Misión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Comprender conceptual y prácticamente qué es el <strong>Vibe Coding</strong>: la metodología de diálogo estratégico con la IA.</li>
+                                        <li>Aprender a interactuar con <strong>Xolo</strong>, diferenciando su rol como <strong>Tutor Conceptual</strong> (en Skill Labs) y <strong>Colaborador Creativo</strong> (en Studio Sessions).</li>
+                                        <li>Ejecutar el primer ciclo completo de Vibe Coding para crear un asset digital tangible, desde la intención hasta el resultado.</li>
+                                    </ul>
+                                    <strong>Secuencia de la Misión:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Descifrando el Vibe Coding: El Manual de Colaboración con IA:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Tu Primera Conversación de Aprendizaje con Xolo:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius Storm: Mi Primer Arte Conceptual Dirigido por IA:</strong> (20 min)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Comprensión clara de la metodología Vibe Coding y los roles de Xolo.</li>
+                                        <li>Una imagen de "arte conceptual" (concept art) generada por una IA, a partir de un prompt co-creado con Xolo, inspirada en una escena de Delightex.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de <strong>Delightex</strong> activas para todos los estudiantes.</li>
+                                        <li>Acceso al chat de <strong>Xolo</strong> dentro de Gnius Space.</li>
+                                        <li>Presentación de diapositivas para guiar la sesión.</li>
+                                        <li>Acceso a una herramienta de IA generativa de imágenes (ej. Midjourney, Leonardo.Ai, o similar, según lo definido en el programa).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para el Facilitador:</strong>
+                                    <ol>
+                                        <li><strong>Prueba del Flujo:</strong> Realizar el ejercicio completo por cuenta propia: pedir a Xolo la explicación, entender los roles y luego usarlo para generar el prompt de la Misión 2. Esto te permitirá anticipar las respuestas de Xolo y guiar mejor a los estudiantes.</li>
+                                        <li><strong>Tener Ejemplo Listo:</strong> Tener una imagen de "arte conceptual" generada previamente, lista para mostrar como ejemplo concreto de lo que van a lograr.</li>
+                                        <li><strong>Claridad en los Roles de Xolo:</strong> Estudiar a fondo la "Guía de Implementación AI-First" para dominar y poder explicar con seguridad la diferencia entre el Xolo-Tutor y el Xolo-Colaborador.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Descifrando el Vibe Coding: El Manual de Colaboración con IA ⏰ 10 minutos</h2>
+                <p>Introducir la metodología Vibe Coding y explicar los dos roles fundamentales que Xolo desempeñará, estableciendo un marco de trabajo claro para el resto del año.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Del Pedido a la Colaboración ⏰ 4 minutos</h3>
+                            <p>(El facilitador comienza con una pregunta que conecte con la experiencia de los estudiantes con la IA).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, equipo. En la sesión pasada, conocieron a Xolo, su copiloto de IA. La mayoría de ustedes probablemente ya ha interactuado con alguna IA como ChatGPT. Normalmente, ¿cómo funciona? Le pides algo, te da una respuesta. Es una transacción. Es útil, pero es limitado. En Gnius Club, vamos a llevar esa interacción a un nivel completamente distinto. No vamos a hacer 'pedidos', vamos a tener 'diálogos'. A esta metodología la llamamos <strong>Vibe Coding</strong>.</p>
+                                <p class="dialogue assistant">Piensen en esto: 'Vibe' es su intención, su visión, la esencia creativa de lo que quieren construir. No es una instrucción detallada, es el 'qué' y el 'porqué'. 'Coding', en este contexto, no es solo escribir código Python. Es el proceso de traducir ese 'vibe' en un resultado concreto, ya sea un guion, un asset 3D, un plan de proyecto o un script. El Vibe Coding es el puente entre su creatividad humana y la capacidad de ejecución de la IA. Y Xolo es el ingeniero que les ayudará a construir ese puente.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Los Dos Rostros de Xolo: Tutor y Colaborador ⏰ 6 minutos</h3>
+                            <p>(Proyectar una diapositiva que muestre dos columnas: "Misiones Skill Lab" con un ícono de un libro o cerebro, y "Misiones Studio Session" con un ícono de una bombilla o herramientas de creación. El facilitador usa la Guía de Implementación para explicar esto a fondo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que esta colaboración funcione, es crucial que entiendan que Xolo no siempre actúa de la misma manera. Tiene dos 'modos' de operación, dependiendo de la misión en la que estemos.</p>
+                                <p class="dialogue assistant"><strong>En las misiones 'Skill Lab'</strong>, que son para aprender una habilidad técnica específica en Delightex, Xolo actúa como un <strong>Tutor Conceptual</strong>. Su objetivo aquí es que *ustedes* dominen la habilidad. Imaginen que están en un gimnasio aprendiendo un nuevo ejercicio. Xolo no levantará las pesas por ustedes. Les dirá: 'El tutorial que necesitas para aprender a mover la cámara es este. ¡Adelante!'. No les va a explicar con texto cómo hacer clic y arrastrar; eso sería ineficiente. Su rol es dirigirlos al recurso correcto. Si se atascan en el tutorial y le preguntan, por ejemplo, '¿qué significa orbitar?', no les dará la solución, sino una analogía para que entiendan el concepto: 'Orbitar es como ser un planeta que gira alrededor del sol. El sol es el objeto que miras, y tú te mueves a su alrededor sin perderlo de vista'. ¿Se entiende? Su rol es guiar su aprendizaje, no hacer el trabajo.</p>
+                                <p class="dialogue assistant"><strong>En las misiones 'Studio Session'</strong>, que son para aplicar sus habilidades y avanzar en su proyecto creativo, Xolo cambia de rol. Aquí, se convierte en un <strong>Colaborador Creativo y Técnico</strong>. Ahora sí es su compañero de equipo.</p>
+                                <ul>
+                                    <li>Actúa como <strong>Brainstormer</strong>: Le pueden pedir ideas para una historia o un puzzle.</li>
+                                    <li>Como <strong>Asistente de Diseño</strong>: Les ayuda a estructurar esas ideas en un plan coherente.</li>
+                                    <li>Y como <strong>Generador de Código</strong> o <strong>Consultor Técnico</strong>: Traducirá su lógica, su 'vibe', en el script de Python que necesiten y les ayudará a depurar errores.</li>
+                                </ul>
+                                <p class="dialogue assistant">La clave es que ustedes sepan en qué tipo de misión están para saber cómo interactuar con él. ¿Queda clara esta diferencia? Es la regla más importante para trabajar con Xolo este año.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Tu Primera Conversación de Aprendizaje con Xolo ⏰ 10 minutos</h2>
+                <p>Que los estudiantes inicien su primera interacción guiada con Xolo, donde experimentarán su rol de "Tutor" al pedirle que les enseñe sobre sí mismo y el flujo de trabajo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío de Aprender del Experto ⏰ 2 minutos</h3>
+                            <p>Establecer el objetivo de la interacción: aprender el protocolo de colaboración directamente de la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto, ya tenemos la teoría. Ahora, vamos a la práctica. La mejor manera de entender cómo trabajar con Xolo es... preguntándole a él mismo. Su primera misión de Vibe Coding es sencilla pero fundamental. Van a entrar al chat de Xolo y le pedirán que les explique cómo van a colaborar este año. Esto pondrá a prueba su habilidad para formular una pregunta clara y les permitirá experimentar de primera mano su rol como tutor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Interacción Guiada ⏰ 8 minutos</h3>
+                            <p>(Los estudiantes abren el chat de Xolo en Gnius Space).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Abran el chat de Xolo. Quiero que formulen una pregunta clara y directa. Por ejemplo, podrían escribir: <strong>'Xolo, soy un estudiante de 2º de Secundaria. Explícame cómo vamos a trabajar juntos este año en las misiones de Delightex. Detalla tus dos roles principales y cómo debo interactuar contigo en cada uno.'</strong></p>
+                                <p class="dialogue assistant">Tómense un momento para leer con atención su respuesta. No la pasen por alto. Está diseñada para reforzar lo que acabamos de hablar. Fíjense en cómo estructura la información. ¿Usa viñetas? ¿Usa negritas? Está diseñado para ser claro. Si algo en su explicación no les queda claro, ¡pregúntenle! Pueden hacer una pregunta de seguimiento como: <strong>'¿Puedes darme un ejemplo de una pregunta que te haría en una Studio Session?'</strong>. Este es su momento para entender las reglas del juego directamente de la fuente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Gnius Storm: Mi Primer Arte Conceptual Dirigido por IA ⏰ 20 minutos</h2>
+                <p>Realizar el primer ciclo completo de Vibe Coding en modo "Colaborador Creativo", donde los estudiantes dirigirán a Xolo para co-crear un prompt que genere un asset visual tangible.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Contexto Creativo - Misión 2 ⏰ 3 minutos</h3>
+                            <p>(Proyectar una diapositiva con una captura de pantalla de la escena vacía de Delightex).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, ya saben cómo Xolo les enseñará y cómo colaborará con ustedes. Es hora de ponerlo en modo <strong>Colaborador Creativo</strong>. En su próxima misión, la Misión 2, su objetivo será convertirse en 'Escultores Digitales', aprenderán a añadir, mover y manipular objetos en Delightex. Pero un gran artista o diseñador no empieza a construir a ciegas. Primero, busca inspiración. Crea lo que se llama 'arte conceptual' (concept art), que es una imagen que captura la atmósfera, el estilo y la emoción de la escena que quiere construir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Vibe Coding en Acción: Co-creando el Prompt ⏰ 12 minutos</h3>
+                            <p>Guiar a los estudiantes a través del proceso de diálogo con Xolo para crear un prompt profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Hoy, vamos a crear el arte conceptual para nuestra primera escena, y Xolo será nuestro director de arte conceptual. Pero recuerden, ustedes son los directores generales. Xolo necesita su 'vibe'.</p>
+                                 <p class="dialogue assistant"><strong>Primero, definan su Vibe:</strong> Piensen en una escena que les gustaría construir. Podría ser 'un bosque fantástico con hongos luminosos y árboles de cristal' o 'un laboratorio de ciencia abandonado y post-apocalíptico'. Definan su idea en una frase simple.</p>
+                                 <p class="dialogue assistant"><strong>Segundo, dialoguen con Xolo:</strong> Ahora, van a usar a Xolo para traducir ese 'vibe' en un prompt profesional para una IA generadora de imágenes. Le van a decir:<br>
+                                 <strong>'Xolo, actúa como un experto en prompt engineering. Mi vibe para una escena es: [aquí pegan su frase, ej: 'un bosque fantástico con hongos luminosos y árboles de cristal']. Ayúdame a crear un prompt detallado para generar un 'concept art' de alta calidad.'</strong></p>
+                                 <p class="dialogue assistant">Lean con atención el prompt que Xolo les genere. No lo copien y peguen ciegamente. Analícenlo. ¿Añadió detalles sobre la iluminación? ¿Sobre el estilo artístico (ej. 'photorealistic', 'fantasy', 'digital painting')? ¿Sobre la composición? Xolo está aplicando su conocimiento para enriquecer su idea inicial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: La Generación del Asset y la Reflexión ⏰ 5 minutos</h3>
+                            <p>Ejecutar el prompt y reflexionar sobre el proceso de co-creación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Una vez que tengan el prompt refinado, es el momento de la verdad. Van a copiar ese prompt y lo llevarán a la herramienta de IA generativa de imágenes que tenemos disponible. Pega el prompt, genera la imagen y observa el resultado.</p>
+                                <p class="dialogue assistant">(Una vez generada la imagen, el facilitador cierra la actividad).</p>
+                                <p class="dialogue assistant">Perfecto. Miren esa imagen. Eso que tienen en pantalla no es algo que encontraron en internet. Es una co-creación. Nació de su 'vibe' humano, fue enriquecida por la experiencia técnica de Xolo, y ejecutada por el poder de otra IA. Acaban de completar su primer ciclo de Vibe Coding. Tradujeron una intención en un resultado digital tangible y único. Este es el flujo de trabajo que usaremos para construir cosas increíbles este año. ¡Felicidades, han desbloqueado el modo creador!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
